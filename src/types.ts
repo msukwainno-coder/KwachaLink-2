@@ -1,0 +1,3 @@
+export type Profile = { id: string; full_name: string | null; email?: string | null; country?: string | null; avatar_url?: string | null };
+export type ForexOffer = { id: string; user_id: string; offer_type: 'buy'|'sell'; currency_from: string; currency_to: string; exchange_rate: number; amount: number; remaining_amount?: number; country?: string; description?: string; status: string; created_at: string };
+export type TradeListing = { id: string; user_id: string; listing_type: string; title: string; description: string; category?: string; quantity?: number; unit?: string; estimated_price?: number; currency?: string; country?: string; city?: string; destination_country?: string; image_urls?: string[]; status: string; created_at: string };
